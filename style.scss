@@ -1,0 +1,13 @@
+let nombre = prompt("Introduce tu nombre");
+let edad = prompt("Introduce tu edad");
+
+if (isNaN(edad)) {
+  alert("Debes introducir un número para la edad");
+} else {
+  edad = parseInt(edad);
+  if (edad >= 18) {
+    alert(nombre + ", puedes conducir");
+  } else {
+    alert(nombre + ", no puedes conducir");
+  }
+}
